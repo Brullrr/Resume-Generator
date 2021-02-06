@@ -106,8 +106,7 @@ class ResumeApplication extends Component {
         render () {
             return (
                 <Fragment>
-                    <Homepage />
-                    {/* <Route path='/' render={() => <Homepage /> } /> 
+                    <Route path='/' render={() => <Homepage /> } /> 
                     <Route path='/CreateNewResume' exact render={() => <CreateResumePage createNewResumeHandler={this.createNewResumeHandler} userResumes={this.state.userResumesArray}/>} />
                     <Route path='/ResumeHolder' exact render={() => {
                             return (<ResumeHolderPage 
@@ -119,7 +118,7 @@ class ResumeApplication extends Component {
                                 deleteResume={this.deleteResumeHandler}
                                 
                             />)
-                    }} /> */}
+                    }} />
                 </Fragment>
             )
 
