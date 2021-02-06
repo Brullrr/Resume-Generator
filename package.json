@@ -1,6 +1,6 @@
 {
   "homepage": "http://Brullrr.github.io/Resume-Generator",
-  "name": "base-project",
+  "name": "Resume-Generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
