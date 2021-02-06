@@ -106,7 +106,7 @@ class ResumeApplication extends Component {
         render () {
             return (
                 <Fragment>
-                    <Route path='https://brullrr.github.io/Resume-Generator/' exact  render={() => <Homepage /> } /> 
+                    <Route path='/' exact  render={() => <Homepage /> } /> 
                     <Route path='/CreateNewResume' exact render={() => <CreateResumePage createNewResumeHandler={this.createNewResumeHandler} userResumes={this.state.userResumesArray}/>} />
                     <Route path='/ResumeHolder' exact render={() => {
                             return (<ResumeHolderPage 

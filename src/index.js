@@ -7,10 +7,9 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename='https://brullrr.github.io/Resume-Generator'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
     </BrowserRouter>
-    
   </React.StrictMode>,
   document.getElementById('root')
 );
