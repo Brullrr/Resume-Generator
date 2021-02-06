@@ -1,0 +1,168 @@
+.CreateResumePage {
+    height: 100vh;
+    width: 100%;
+    min-width: 700px;
+    background-image: url('../../Images/office\ meeting\ room.jpg');
+    background-size: 100% 100%;
+    padding: 10px;
+}
+
+.HoldButton {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    margin-left: 20px;
+}
+
+.CreateButtonHolder {
+    position: fixed;
+    top: 70%;
+    right: 10%;
+    margin-right: 20px;
+}
+
+.Input {
+    margin: 0px 0px 0px 10px;
+    padding-left: 5px;
+    height: 40px;
+}
+.CreationForm {
+    display: grid;
+    position: relative;
+    justify-self: center;
+    top: 20%;
+    left: 28vw;
+    min-width: 350px;
+    width: 40vw;
+    background-color: white;
+    padding: 16px;
+    text-align: center;
+    grid-template-columns: auto auto;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 16px;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.Question {
+    padding: 5px;
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+.CertificateButtonNO {
+    border: 1px solid red;
+    border-radius: 16px;
+    width: 100px;
+    padding: 2px;
+    margin-top: 15%;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 20%;
+    animation-name: turnBorderRed;
+    animation-duration: 1s;
+}
+.CertificateButtonNO p{
+    padding: 0px;
+    padding-left: 10px;
+    margin: 0px;
+}
+.CoverDivNO {
+    position: relative;
+    width: 50px;
+    height: 20px;
+    background-color: red;
+    margin: -23px 0px 0px 46px;
+    border: 3px solid red;
+    border-radius: 16px;
+    animation-name: turnRed;
+    animation-duration: 1s;
+    transition: ease;
+}
+.CertificateButtonYES {
+    border: 1px solid green;
+    border-radius: 16px;
+    width: 100px;
+    padding: 2px;
+    height: 20px;
+    margin-top: 15%;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 20%;
+    animation-name: turnBorderGreen;
+    animation-duration: 1s;
+}
+
+.CertificateButtonYES p{
+    padding: 0px;
+    padding-left: 65px;
+    margin: 0px;
+}
+.CoverDivYES {
+    position: relative;
+    width: 50px;
+    height: 20px;
+    background-color: green;
+    margin: -23px 0px 0px -3px;
+    border: 3px solid green;
+    border-radius: 16px;
+    animation-name: turnGreen;
+    animation-duration: 1s;
+    transition: ease;
+}
+
+@keyframes turnGreen {
+    0% {
+        position: relative;
+        width: 50px;
+        height: 20px;
+        background-color: red;
+        margin: -23px 0px 0px 46px;
+        border: 3px solid red;
+        border-radius: 16px;
+    }
+    100% {
+        position: relative;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin: -23px 0px 0px -3px;
+        border: 3px solid green;
+        border-radius: 16px;
+    }
+}
+@keyframes turnRed {
+    0% {
+        position: relative;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin: -23px 0px 0px -3px;
+        border: 3px solid green;
+        border-radius: 16px;
+    }
+    100% {
+        position: relative;
+        width: 50px;
+        height: 20px;
+        background-color: red;
+        margin: -23px 0px 0px 46px;
+        border: 3px solid red;
+        border-radius: 16px;
+    }   
+}
+@keyframes turnBorderRed {
+    0% {border: 1px solid green}
+    100% {border: 1px solid red}
+}
+@keyframes turnBorderGreen {
+    0% {border: 1px solid red}
+    100% {border: 1px solid green}
+}

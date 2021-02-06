@@ -1,0 +1,654 @@
+.ResumeHolderPageBody {
+    background-image: url('../../Images/office\ plant.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    min-width: 1320px;
+}
+
+.ButtonHolder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-width: 900px;
+    width: 90%;
+    padding-top: 30px;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    
+}
+.HomeButton {
+    padding-left: 40px;
+}
+
+
+.TripleHolder {
+    display: grid;
+    grid-template-columns: auto 900px auto;
+}
+
+
+.ResumeHolder {
+    display: inline-block;
+    background-color: rgba(238, 232, 170, 0.871);
+    padding: 4px;
+    text-align: center;
+    min-width: 150px;
+    border-radius: 5px;
+    
+}
+.ResumeHolder div {
+    cursor: pointer;
+    background-color: rgba(238, 232, 170, 0.871);
+    padding: 4px 0px 8px 0px;
+    border-radius: 4px;
+    margin: 8px 4px;
+    box-shadow: 0px 1px 2px 2px black;
+}
+.ResumeDeletion:hover {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: -2px;
+}
+
+
+.ResumeDeletion {
+    background-color: salmon;
+    border: 1px dotted red;
+    border-radius: 8px;
+    float: left;
+    font-size: 4px;
+    margin-left: 2px;
+    width: 25px;
+    z-index: 5;
+}
+
+
+
+.PreviewHolderMiddle {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto auto auto;
+    background-color: rgba(255, 255, 255, 0.378); 
+    background-color: white;
+}
+.ExtraInputs {
+    display: inline-block;
+    background-color: rgba(238, 232, 170, 0.871);
+    min-width: 250px;
+    border-radius: 5px;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.AddFile {
+    width: 90%;
+    height: 30px;
+    border: 2px solid grey;
+    background-color: grey;
+    color: white;
+    border-radius: 8px;
+    margin: 5px 0px 5px 5%;
+    box-shadow: 0px 0px 2px 1px black;
+    text-shadow: 0 0 20px blanchedalmond;
+    line-height: 30px;
+}
+
+.AddFile:hover {
+    cursor: pointer;
+    border-color: white;
+    font-weight: bold;
+    text-shadow: 0 0 40px white;
+}
+
+.ProfilePicture {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(5, 5, 5);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 18px;
+    
+}
+
+.CoverLetterAndName {
+    background-color: rgb(128, 128, 128);
+    color: white;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.EnterName {
+    background-color: grey;
+    border: none;
+    height: 40px;
+    width: 90%;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    outline: none;
+    margin-top: 10px;
+
+}
+.EnterName:focus {
+    color: white;
+    font-size: 30px;
+}
+.EnterName::placeholder {
+    color: white;
+    font-size: 30px;
+}
+
+.DivideNameAndLetter {
+    border-bottom: 2px solid white;
+    width: 70%;
+    margin-left: 5%;
+    
+}
+
+.EnterCoverLetter {
+    padding-top: 10px;
+    background-color: grey;
+    border: none;
+    height: 200px;
+    width: 90%;
+    text-align: left;
+    color: white;
+    font-size: 15px;
+   resize: none;
+   overflow: hidden;
+   cursor: default;
+}
+.EnterCoverLetter:focus {
+    color: white;
+    font-size: 15px;
+}
+.EnterCoverLetter::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.ContactInfoDiv {
+    display: grid;
+    background-color: ivory;
+    grid-template-columns: 100%;
+    margin-left: 25px;
+}
+.ContactInfoDiv input{ 
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    margin-top: 8px;
+    outline: none;
+}
+.ContactInfoDiv input::placeholder {
+    color: black;
+    font-size: 12px;
+}
+.ContactInfoDiv textarea{ 
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    outline: none;
+}
+.ContactInfoDiv textarea::placeholder {
+    color: black;
+    font-size: 12px;
+}
+
+.ContactInfoDiv img {
+    height: 18px;
+    width: 13px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.LocationDiv {
+    display: grid;
+    grid-template-columns: 90%;
+    
+}
+
+.Websites {
+    height: 60px;
+    overflow: hidden;
+    resize: none;
+}
+
+.SkillsContainer {
+    text-align: center;
+}
+.SkillsContainer p {
+    font-size: 25px; 
+    color: grey; 
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+.SkillsDivider {
+    border: 1px solid grey;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.Skill {
+    background-color: grey;
+    border-radius: 4px;
+    height: 30px;
+    width: 70%;
+    font-size: 20px;
+    color: white;
+    padding: 0px 0px 0px 5px;
+    box-shadow: 1px 2px 8px 1px black;
+    margin: 10px 25px;
+    line-height: 30px;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+.Skill:hover {
+    background-color: salmon;
+    border: 1px dotted red;
+}
+
+.WorkExperienceContainer {
+    background-color: white;
+}
+
+
+.WorkExperienceTitle {
+    font-size: 25px; 
+    color: grey; 
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 5px;
+    margin: 0px 0px 0px 25px;
+    padding: 20px 0px 5px 0px;
+
+}
+.WorkExperienceTitleDivider {
+    border-bottom: 2px solid grey;
+    width: 90%;
+    margin: 5px;
+    padding: 0px;
+}
+
+.JobTitle {
+    color: grey;
+    font-size: 30px;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+
+}
+.JobTitle:hover {
+    cursor: pointer;
+    background-color: salmon;
+    border: 1px dotted red;    
+}
+
+.CompanyName {
+    color: black;
+    font-size: 28px;
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
+}
+
+.WorkDate {
+    color: grey;
+    font-size: 10px;
+    margin: 0px 5px 0px 8px;
+    padding: 0px;
+    font-style: italic;
+}
+
+.ResponsibilityContainer {
+    display: grid;
+    grid-template-columns: 6% 94%;
+    margin: 0px 0px 0px 0px;
+}
+
+.BulletPoint {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin: 40% 0px 0px 25px;
+    background-color: white;
+    font-size: 0px;
+    border: 1px solid black;
+}
+
+.Responsibility {
+    color: black;
+    font-size: 15px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.LanguageName {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin: 0px 0px 0px 30px;
+}
+
+.LanguageName:hover {
+    cursor: pointer;
+    background-color: salmon;
+    width: 60%;
+}
+
+.LanguageContainer {
+    margin: 0px 0px 0px 0px;
+}
+
+.LanguageTitle {
+    font-size: 25px; 
+    color: grey; 
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 5px;
+    margin: 0px 0px 0px 25px;
+    padding: 20px 0px 5px 0px;
+    
+}
+
+.CircleContainer {
+    margin: 15px 0px 0px 25px;
+}
+
+.LanguageCircle {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin: 0px 0px 0px 5px;
+    
+}
+.LanguageCircleFilled {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background-color: grey;
+    margin: 0px 0px 0px 5px;
+}
+
+
+.EducationContainer {
+    margin: 0px 0px 0px 0px;
+}
+
+.EducationTitle {
+    font-size: 25px; 
+    color: grey; 
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 5px;
+    margin: 0px 0px 0px 25px;
+    padding: 20px 0px 5px 0px;
+}
+
+.Education:hover {
+    cursor: pointer;
+    background-color: salmon;
+}
+
+.EducationStudy {
+    color: grey;
+    font-size: 30px;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+
+}
+
+.EducationSchool {
+    color: black;
+    font-size: 25px;
+    margin: 10px 0px 0px 15px;
+    padding: 0px;
+    
+}
+
+.EducationDate {
+    display: inline-block;
+    color: grey;
+    font-size: 10px;
+    margin: 0px 5px 10px 5px;
+    padding: 0px;
+    font-style: italic;
+}
+
+.EducationCountry {
+    display: inline-block;
+    color: grey;
+    font-size: 10px;
+    margin: 0px 5px 0px 65%;
+    padding: 0px;
+    font-style: italic;
+}
+
+
+
+
+.ExtraButtonsContainer {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+}
+.SkillInput {
+    border: 2px solid rgb(172, 170, 170);
+    border-radius: 5px;
+    width:90%;
+    margin: 5px;
+    outline: none;
+    padding: 4px;
+}
+.SkillInput:hover {
+    border: 2px solid rgb(70, 69, 69);
+}
+.SkillSubmitButton {
+    border: 4px solid orangered;
+    border-radius: 4px;
+    color: black;
+    background-color: orangered;
+    width: 30%;
+    height: 35px;
+    text-align: center;
+    justify-self: center;
+    margin: 0px 0px 5px 0px;
+    font-size: 20px;
+}
+.SkillSubmitButton:hover {
+    cursor: pointer;
+    border: 4px solid orange;
+    font-size: 30px;
+    line-height: 25px;
+}
+
+
+
+
+.CertificateButtonsContainer {
+    text-align: left;
+}
+.CertificateDateInput {
+    border: 2px solid rgb(172, 170, 170);
+    border-radius: 5px;
+    width: 15%;
+    margin: 5px;
+    outline: none;
+    padding: 4px;
+}
+.CertificateDateInput:hover {
+    border: 2px solid rgb(70, 69, 69);
+}
+.CertificateNameInput {
+    border: 2px solid rgb(172, 170, 170);
+    border-radius: 5px;
+    width: 60%;
+    margin: 5px;
+    outline: none;
+    padding: 4px;
+}
+.CertificateNameInput:hover {
+    border: 2px solid rgb(70, 69, 69);
+}
+.CertificateSubmitButton {
+    border: 4px solid orangered;
+    border-radius: 4px;
+    color: black;
+    background-color: orangered;
+    width: 30%;
+    height: 35px;
+    text-align: center;
+    justify-self: center;
+    margin: 0px 0px 5px 35%;
+    font-size: 20px;
+}
+.CertificateSubmitButton:hover {
+    cursor: pointer;
+    border: 4px solid orange;
+    font-size: 30px;
+    line-height: 25px;
+}
+
+
+.LanguageButtonsContainer {
+    text-align: left;
+}
+
+.LanguageAbilityInput {
+    border: 2px solid rgb(172, 170, 170);
+    border-radius: 5px;
+    width: 15%;
+    margin: 5px;
+    outline: none;
+    padding: 4px;
+}
+.LanguageAbilityInput:hover {
+    border: 2px solid rgb(70, 69, 69);
+}
+.LanguageNameInput {
+    border: 2px solid rgb(172, 170, 170);
+    border-radius: 5px;
+    width: 60%;
+    margin: 5px;
+    outline: none;
+    padding: 4px;
+}
+.LanguageNameInput:hover {
+    border: 2px solid rgb(70, 69, 69);
+}
+.LanguageSubmitButton {
+    border: 4px solid orangered;
+    border-radius: 4px;
+    color: black;
+    background-color: orangered;
+    width: 30%;
+    height: 35px;
+    text-align: center;
+    justify-self: center;
+    margin: 0px 0px 5px 35%;
+    font-size: 20px;
+}
+.LanguageSubmitButton:hover {
+    cursor: pointer;
+    border: 4px solid orange;
+    font-size: 30px;
+    line-height: 25px;
+}
+
+.CertificateTitle {
+    font-size: 25px; 
+    color: grey; 
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 5px;
+    margin: 0px 0px 0px 25px;
+    padding: 20px 0px 5px 0px;
+}
+
+.CertificateTitleDivider {
+    border-bottom: 2px solid grey;
+    width: 90%;
+    margin: 5px;
+    padding: 0px;
+}
+
+.CertificateName {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin: 0px 0px 0px 30px;
+    word-wrap: break-word;
+    width: 80%;
+}
+
+.CertificateName:hover {
+    cursor: pointer;
+    background-color: salmon;
+}
+
+.CertificateDate {
+    color: grey;
+    font-size: 20px;
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+    font-style: italic;
+    float: right;
+    font-weight: 600;
+}
+
+.AddWorkExperience {
+    width: 90%;
+    height: 30px;
+    border: 2px solid grey;
+    background-color: grey;
+    color: white;
+    border-radius: 8px;
+    margin: 5px 0px 5px 5%;
+    box-shadow: 0px 0px 2px 1px black;
+    text-shadow: 0 0 20px blanchedalmond;
+
+}
+
+.AddWorkExperience:hover {
+    cursor: pointer;
+    border-color: white;
+    font-weight: bold;
+    text-shadow: 0 0 40px white;
+}
+
+
+.AddEducationExperience {
+    width: 90%;
+    height: 30px;
+    border: 2px solid grey;
+    background-color: grey;
+    color: white;
+    border-radius: 8px;
+    margin: 5px 0px 5px 5%;
+    box-shadow: 0px 0px 2px 1px black;
+    text-shadow: 0 0 20px blanchedalmond;
+
+}
+
+.AddEducationExperience:hover {
+    cursor: pointer;
+    border-color: white;
+    font-weight: bold;
+    text-shadow: 0 0 40px white;
+}
