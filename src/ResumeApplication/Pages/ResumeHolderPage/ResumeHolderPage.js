@@ -391,7 +391,7 @@ const ResumeHolderPage = (props) => {
         return (<div key={element.resumeName} onClick={() => { 
             props.addToPreview(element)  
             engagePreview(element) 
-        }} >{element.resumeName} <button className={classes.ResumeDeletion} onClick={() => { props.deleteResume(element) }} >X</button></div>)
+        }} >{element.resumeName} </div>)
         
     })
 
@@ -535,6 +535,17 @@ const ResumeHolderPage = (props) => {
         setWorkExperienceModalState(true)
     }
 
+    let skillInput = null;
+    if(props.previewResume) {
+        skillInput = props.previewResume.skills.length >= 10 ? null : <input className={classes.SkillInput} type="text" placeholder='Enter a skill' maxLength='17' onChange={ (e) => {changeNewSkillEntryValue(e)}} value={newSkillEntry}></input>
+    }
+
+    let skillEntryButton = <button className={classes.SkillSubmitButton} onClick={() => {addNewSkillHandler(newSkillEntry); changeNewSkillEntryValueTwo(); }  }>+</button>;
+    if(newSkillEntry) {
+        props.previewResume.skills.forEach(element => element === newSkillEntry ? skillEntryButton = null : skillEntryButton = skillEntryButton)
+    } else {
+        skillEntryButton =null
+    }
     
 
     let buttons = (
@@ -544,15 +555,16 @@ const ResumeHolderPage = (props) => {
                 <input id='profile-picture' type='file'  onChange={addProfilePicture}/>
             </label>
             
-            
-            <input className={classes.SkillInput} type="text" placeholder='Enter a skill' maxLength='20' onChange={ (e) => {changeNewSkillEntryValue(e)}} value={newSkillEntry}></input>
-            { newSkillEntry ? <button className={classes.SkillSubmitButton} onClick={() => {addNewSkillHandler(newSkillEntry); changeNewSkillEntryValueTwo(); }  }>+</button> : null}
+            {skillInput}  
+            { skillEntryButton}
             {checkIfLanguageEnabled}
             {checkIfCertificatesEnabled}
 
             <button className={classes.AddWorkExperience} onClick={turnOnExperienceModal}>ADD WORK EXPERIENCE</button>
             <button className={classes.AddEducationExperience} onClick={turnOnEducationModal}>ADD EDUCATION</button>
             
+
+            <button className={classes.ResumeDeletion} onClick={() => { props.deleteResume(props.previewResume) }} >DELETE RESUME</button>
         </div>
     )
 
@@ -575,16 +587,16 @@ const ResumeHolderPage = (props) => {
             </div>
         ) 
     }
-
+    console.log(props.previewResume ? true : false)
     return (
         <Fragment>
             <div className={classes.ResumeHolderPageBody}>
                 <div className={classes.ButtonHolder}>
                     <div className={classes.HomeButton}><Button to='/' ButtonName='Go Home' onClick={props.clearPreview}/></div>
-                    <div className={classes.HomeButton}><Button to='/ResumeHolder' ButtonName='Save' deny={props.userResumesArray[0] ? true :false} onClick={() => {
+                    <div className={classes.HomeButton}><Button to='/ResumeHolder' ButtonName='Save' deny={props.previewResume ? true : false} onClick={() => {
                         props.previewChanged(preview)
                     }} /></div>
-                    <div className={classes.HomeButton}><Button to='/ResumeHolder' ButtonName='Print as a PDF' onClick={ () => {
+                    <div className={classes.HomeButton}><Button to='/ResumeHolder' ButtonName='DOWNLOAD PDF' deny={props.previewResume ? true : false} onClick={ () => {
                         CreatePDF(props.previewResume)
                     }} /></div>           
                 </div>

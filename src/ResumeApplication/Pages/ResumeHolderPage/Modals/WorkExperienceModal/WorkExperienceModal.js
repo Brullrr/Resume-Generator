@@ -130,8 +130,8 @@ const WorkExperienceForm = (props) => {
             <input className={classes.EndYear} type='number' max='2021' min='1921' placeholder={newWorkExperience.endYear ? newWorkExperience.endYear : 'Year Ended'} onChange={ (e) => {endYearChange(e)}}/>
             <div className={classes.Ongoing} onClick={ongoingChange}>OnGoing</div>
             <p className={classes.KeyResponsibilityTitle}>Key Responsibilities</p>
-            <input className={classes.ResponsibilityName} type='text' placeholder='Enter a responsibility you held or task you managed' onChange={responsibilityNameChange}/>
-            <textarea className={classes.Explanation} type='text' placeholder='Explain the responsibility you held or task you managed' onChange={responsibilityExplanationChange}/>
+            <input className={classes.ResponsibilityName} maxLength='20' type='text' placeholder='Enter a responsibility you held or task you managed' onChange={responsibilityNameChange}/>
+            <textarea className={classes.Explanation} maxLength='100' type='text' placeholder='Explain the responsibility you held or task you managed' onChange={responsibilityExplanationChange}/>
             <button className={classes.AddResponsibilityButton} onClick={addResponsibility} >Add New Responsibility</button>
             {newWorkExperience.responsibilities.map((element) => {
                 return <p className={classes.Responsibility} onClick={ () => {deleteResponsibility(element)}}>{element.responsibilityName}</p>

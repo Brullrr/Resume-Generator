@@ -17,13 +17,14 @@ class ResumeApplication extends Component {
                             email: 'www.Yuuki@gmail.com',
                             phoneNumber: '090-867-5309',
                             location: 'Toyohashi Aichi, Japan',
-                            linkdIn: 'www.website.com   www.linkdin.com/YuukiSuzuki-12345678  www.Github.com.io/YuukiSuzuki/Website'
+                            linkdIn: 'www.linkdin.com/YuukiSuzuki-12345678'
                         },
                         skills: ['Microsoft Word', 'Microsoft Excel', 'Translation', 'Nursing', 'Teamwork'],
                         isLanguageEnabled: true,
                         languages: [{languageName: 'Japanese', abilityLevel: 5}, {languageName: 'English', abilityLevel: 4}],
-                        coverLetter: 'Detail, deadline, and teamwork oriented professional with over four years of working in a native Japanese speaking environment.  Reliable and organized with the ability to communicate ideas eﬀectively in both English and Japanese.  Self-motivated and able to promptly respond to unexpected tasks.  Experience in the following: instruction, translation, leadership, and mentor-ship. Along with this, I hold a large interest in anything related to computers, and have been studying HTML, CSS, and JavaScript. I would like to utilize my experience and skills in an environment that is as passionate as I am.',
-                        workExperience: [{
+                        coverLetter: 'Detail, deadline, and teamwork oriented professional with over four years of working in a native Japanese speaking environment.  Reliable and organized with the ability. I am writing this using my type as i think something JApanese is infecting the productjion of my build. Hopefully this solves any issues.',
+                        workExperience: [
+                        {
                             jobTitle: 'Nurse',
                             company: 'Toyohashi General Hospital',
                             startMonth: '4',
@@ -32,12 +33,33 @@ class ResumeApplication extends Component {
                             endYear: 2019,
                             responsibilities: [{
                                 responsibilityName: 'Patient Care',
-                                responsibilityExplanation: 'Attended to a room of 5 patients at any given time.'
+                                responsibilityExplanation: 'Overlooked a room of five or more patients. Attended to any of their needs'
+                            }, 
+                            {
+                                responsibilityName: 'Doctor\'s Support',
+                                responsibilityExplanation: 'Worked closely with doctors to ensure proper care of patients.'
                             }]
                         }],
-                        isCertificatesEnabled: false,
-                        certificates: [],
-                        education: []
+                        isCertificatesEnabled: true,
+                        certificates: [{
+                            certificateName: 'Nursing License',
+                            date: 2016
+                        }, 
+                        {
+                            certificateName: 'Eiken Grade 2',
+                            date: 2021
+                        }],
+                        education: [
+                            {
+                                study: "Bachelor's of Nursing",
+                                school: "Nagoya University",
+                                startMonth: '04',
+                                startYear: 2012,
+                                endMonth: '04',
+                                endYear: 2016,
+                                country: 'Japan'
+                            }
+                        ]
                     }],
                     previewResume: null
                 }

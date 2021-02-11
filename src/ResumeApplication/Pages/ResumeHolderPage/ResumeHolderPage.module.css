@@ -46,21 +46,23 @@
 }
 .ResumeDeletion:hover {
     cursor: pointer;
-    font-size: 15px;
     font-weight: 900;
-    margin-top: -2px;
+    background-color: red;
+    border: 3px solid salmon;
 }
 
 
 .ResumeDeletion {
+    position: fixed;
     background-color: salmon;
-    border: 1px dotted red;
+    border: 3px solid red;
     border-radius: 8px;
-    float: left;
-    font-size: 4px;
-    margin-left: 2px;
-    width: 25px;
+    font-size: 14px;
+    bottom: 2%;
+    right: 2%;
+    width: 100px;
     z-index: 5;
+    height: 50px;
 }
 
 
@@ -292,7 +294,6 @@ input[type="file"] {
 .JobTitle:hover {
     cursor: pointer;
     background-color: salmon;
-    border: 1px dotted red;    
 }
 
 .CompanyName {
@@ -459,10 +460,10 @@ input[type="file"] {
     border: 2px solid rgb(70, 69, 69);
 }
 .SkillSubmitButton {
-    border: 4px solid orangered;
+    border: 4px solid rgb(70, 69, 69);
     border-radius: 4px;
-    color: black;
-    background-color: orangered;
+    color: rgb(199, 197, 197);
+    background-color: grey;
     width: 30%;
     height: 35px;
     text-align: center;
@@ -472,7 +473,7 @@ input[type="file"] {
 }
 .SkillSubmitButton:hover {
     cursor: pointer;
-    border: 4px solid orange;
+    border: 4px solid rgb(199, 197, 197);
     font-size: 30px;
     line-height: 25px;
 }
@@ -506,10 +507,10 @@ input[type="file"] {
     border: 2px solid rgb(70, 69, 69);
 }
 .CertificateSubmitButton {
-    border: 4px solid orangered;
+    border: 4px solid rgb(70, 69, 69);
     border-radius: 4px;
-    color: black;
-    background-color: orangered;
+    color: rgb(199, 197, 197);
+    background-color: grey;
     width: 30%;
     height: 35px;
     text-align: center;
@@ -519,7 +520,7 @@ input[type="file"] {
 }
 .CertificateSubmitButton:hover {
     cursor: pointer;
-    border: 4px solid orange;
+    border: 4px solid rgb(199, 197, 197);
     font-size: 30px;
     line-height: 25px;
 }
@@ -552,10 +553,10 @@ input[type="file"] {
     border: 2px solid rgb(70, 69, 69);
 }
 .LanguageSubmitButton {
-    border: 4px solid orangered;
+    border: 4px solid rgb(70, 69, 69);
     border-radius: 4px;
-    color: black;
-    background-color: orangered;
+    color: rgb(199, 197, 197);
+    background-color: grey;
     width: 30%;
     height: 35px;
     text-align: center;
@@ -565,7 +566,7 @@ input[type="file"] {
 }
 .LanguageSubmitButton:hover {
     cursor: pointer;
-    border: 4px solid orange;
+    border: 4px solid rgb(199, 197, 197);
     font-size: 30px;
     line-height: 25px;
 }
@@ -592,11 +593,10 @@ input[type="file"] {
     font-size: 20px;
     font-weight: 600;
     color: black;
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 15px;
     word-wrap: break-word;
-    width: 80%;
+    width: 60%;
 }
-
 .CertificateName:hover {
     cursor: pointer;
     background-color: salmon;
@@ -605,7 +605,7 @@ input[type="file"] {
 .CertificateDate {
     color: grey;
     font-size: 20px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 100px 0px 0px;
     padding: 0px;
     font-style: italic;
     float: right;

@@ -6,8 +6,8 @@ const Homepage = () => {
     return (
         <div className={classes.Homepage}>
             <div className={classes.ButtonHolder}>
-            <Button to='/CreateNewResume' ButtonName='Create New Resume' />
-            <Button to='/ResumeHolder' ButtonName='View Your Resumes' />  
+            <Button to='/CreateNewResume' ButtonName='Create Resume' />
+            <Button to='/ResumeHolder' ButtonName='View Resumes' />  
             </div>     
         </div>
     )
