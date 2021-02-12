@@ -94,14 +94,14 @@ const CreateResumePage = (props) => {
 
 
             <div className={classes.CreationForm}>
-                <div className={classes.Question}>Enter a unique resume name.</div>
-                <input className={classes.Input} type='text' placeholder="ex. Company A" onChange={(e) => {
+                <div className={classes.Question}>Resume name.</div>
+                <input className={classes.Input} type='text' maxLength='20' placeholder="ex. Company A" onChange={(e) => {
                     updateResumeNameHandler(e)
                     checkValidity(e)
                     }}></input>
-                <div className={classes.Question} >Would you like to include your languages? </div>
+                <div className={classes.Question} >Include languages? </div>
                 {languageOrNotButton}
-                <div className={classes.Question} >Would you like to include any certificates?</div>
+                <div className={classes.Question} >Include certificates?</div>
                 {certificateOrNotButton}
                 
             </div>

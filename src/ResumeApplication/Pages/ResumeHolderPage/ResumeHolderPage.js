@@ -421,7 +421,7 @@ const ResumeHolderPage = (props) => {
                         <input  type="text" value={props.previewResume.contactInformation.location ? props.previewResume.contactInformation.location : ''} placeholder='Location' onChange={ (e) => {locationHandler(e)}}></input>
                         </div>
                     {props.previewResume.contactInformation.linkdIn ? earthLogo : null}
-                    <textarea className={classes.Websites} value={preview.contactInformation.linkdIn ? preview.contactInformation.linkdIn : '' }  type="text" placeholder='linkdIn, github, and any other website. ' onChange={ (e) => {linkdinHandler(e)}}></textarea>
+                    <textarea className={classes.Websites} value={preview.contactInformation.linkdIn ? preview.contactInformation.linkdIn : '' }  type="text" placeholder='Add your website/LinkdIn. ' onChange={ (e) => {linkdinHandler(e)}}></textarea>
                 </div>
 
             {skillsDiv}
@@ -593,9 +593,9 @@ const ResumeHolderPage = (props) => {
             <div className={classes.ResumeHolderPageBody}>
                 <div className={classes.ButtonHolder}>
                     <div className={classes.HomeButton}><Button to='/' ButtonName='Go Home' onClick={props.clearPreview}/></div>
-                    <div className={classes.HomeButton}><Button to='/ResumeHolder' ButtonName='Save' deny={props.previewResume ? true : false} onClick={() => {
+                    {/* <div className={classes.HomeButton}><Button to='/ResumeHolder' ButtonName='Save' deny={props.previewResume ? true : false} onClick={() => {
                         props.previewChanged(preview)
-                    }} /></div>
+                    }} /></div> */}
                     <div className={classes.HomeButton}><Button to='/ResumeHolder' ButtonName='DOWNLOAD PDF' deny={props.previewResume ? true : false} onClick={ () => {
                         CreatePDF(props.previewResume)
                     }} /></div>           

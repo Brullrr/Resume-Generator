@@ -8,16 +8,12 @@
 
 .ButtonHolder {
     display: grid;
-    grid-template-columns: auto auto auto;
-    min-width: 900px;
-    width: 90%;
+    grid-template-columns: auto auto;
+    width: 70%;
     padding-top: 30px;
-    margin-left: 5%;
+    margin-left: 25%;
     margin-bottom: 5px;
     
-}
-.HomeButton {
-    padding-left: 40px;
 }
 
 
@@ -44,6 +40,8 @@
     margin: 8px 4px;
     box-shadow: 0px 1px 2px 2px black;
 }
+
+
 .ResumeDeletion:hover {
     cursor: pointer;
     font-weight: 900;

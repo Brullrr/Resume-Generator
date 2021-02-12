@@ -10,14 +10,14 @@
 .HoldButton {
     position: fixed;
     top: 0%;
-    left: 0%;
+    left: 40%;
     margin-left: 20px;
 }
 
 .CreateButtonHolder {
     position: fixed;
     top: 70%;
-    right: 10%;
+    left: 40%;
     margin-right: 20px;
 }
 
@@ -57,7 +57,7 @@
 
 
 .CertificateButtonNO {
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 16px;
     width: 100px;
     padding: 2px;
@@ -87,7 +87,7 @@
     transition: ease;
 }
 .CertificateButtonYES {
-    border: 1px solid green;
+    border: 2px solid green;
     border-radius: 16px;
     width: 100px;
     padding: 2px;
@@ -159,10 +159,10 @@
     }   
 }
 @keyframes turnBorderRed {
-    0% {border: 1px solid green}
-    100% {border: 1px solid red}
+    0% {border: 2px solid green}
+    100% {border: 2px solid red}
 }
 @keyframes turnBorderGreen {
-    0% {border: 1px solid red}
-    100% {border: 1px solid green}
+    0% {border: 2px solid red}
+    100% {border: 2px solid green}
 }
