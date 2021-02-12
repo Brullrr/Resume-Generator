@@ -118,27 +118,38 @@ const WorkExperienceForm = (props) => {
         <Backdrop show={props.show} clicked={props.clicked}/>
 
         <div className={classes.Modal}>
-            <input className={classes.JobTitle} type='text' placeholder={newWorkExperience.jobTitle ? newWorkExperience.jobTitle : 'Job Title'} onChange={ (e) => {jobTitleChange(e)}}/>
-            <input className={classes.Company} type='text' placeholder='Company or Employer' onChange={ (e) => {companyChange(e)}}/>
-            
+
+            <div>
+                <input className={classes.JobTitle} type='text' placeholder={newWorkExperience.jobTitle ? newWorkExperience.jobTitle : 'Job Title'} onChange={ (e) => {jobTitleChange(e)}}/>
+                <input className={classes.Company} type='text' placeholder='Company or Employer' onChange={ (e) => {companyChange(e)}}/>
+            </div>
             
             <p className={classes.From} >This position was held from</p>
-            <input className={classes.StartMonth} type='number' max='12' min='1' placeholder='Starting Month' onChange={ (e) => {startMonthChange(e)}}/>
-            <input className={classes.StartYear} type='number' max='2021' min='1921' placeholder='Starting Year' onChange={ (e) => {startYearChange(e)}}/>
+            
+            <div>
+                <input className={classes.StartMonth} type='number' max='12' min='1' placeholder='Starting Month' onChange={ (e) => {startMonthChange(e)}}/>
+                <input className={classes.StartYear} type='number' max='2021' min='1921' placeholder='Starting Year' onChange={ (e) => {startYearChange(e)}}/>            
+            </div>
             <p className={classes.To}> until </p>
-            <input className={classes.EndMonth} type='number' max='12' min='1' placeholder={newWorkExperience.endMonth ? newWorkExperience.endMonth : 'Month Ended'} onChange={ (e) => {endMonthChange(e)}}/>
-            <input className={classes.EndYear} type='number' max='2021' min='1921' placeholder={newWorkExperience.endYear ? newWorkExperience.endYear : 'Year Ended'} onChange={ (e) => {endYearChange(e)}}/>
+            <div>
+                <input className={classes.EndMonth} type='number' max='12' min='1' placeholder={newWorkExperience.endMonth ? newWorkExperience.endMonth : 'Month Ended'} onChange={ (e) => {endMonthChange(e)}}/>
+                <input className={classes.EndYear} type='number' max='2021' min='1921' placeholder={newWorkExperience.endYear ? newWorkExperience.endYear : 'Year Ended'} onChange={ (e) => {endYearChange(e)}}/>
+            </div>
+            
             <div className={classes.Ongoing} onClick={ongoingChange}>OnGoing</div>
             <p className={classes.KeyResponsibilityTitle}>Key Responsibilities</p>
-            <input className={classes.ResponsibilityName} maxLength='20' type='text' placeholder='Enter a responsibility you held or task you managed' onChange={responsibilityNameChange}/>
-            <textarea className={classes.Explanation} maxLength='100' type='text' placeholder='Explain the responsibility you held or task you managed' onChange={responsibilityExplanationChange}/>
-            <button className={classes.AddResponsibilityButton} onClick={addResponsibility} >Add New Responsibility</button>
+            
+                <input className={classes.ResponsibilityName} maxLength='20' type='text' placeholder='Enter a responsibility.' onChange={responsibilityNameChange}/>
+                <textarea className={classes.Explanation} maxLength='100' type='text' placeholder='Explain the responsibility.' onChange={responsibilityExplanationChange}/>
+            
+            
+            <button className={classes.AddResponsibilityButton} onClick={addResponsibility} >Add Responsibility</button>
             {newWorkExperience.responsibilities.map((element) => {
                 return <p className={classes.Responsibility} onClick={ () => {deleteResponsibility(element)}}>{element.responsibilityName}</p>
             })}
             <button className={classes.SubmitButton} onClick={() => {
                 props.addWorkExperienceToPreview(newWorkExperience)
-                props.clicked() }}>ADD WORK EXPERIENCE TO RESUME</button>
+                props.clicked() }}>Submit</button>
         </div>
 
         </Fragment>
