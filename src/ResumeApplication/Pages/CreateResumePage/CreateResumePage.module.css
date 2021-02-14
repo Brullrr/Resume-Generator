@@ -5,19 +5,20 @@
     background-image: url('../../Images/office\ meeting\ room.jpg');
     background-size: 100% 100%;
     padding: 10px;
+    
 }
 
 .HoldButton {
     position: fixed;
     top: 0%;
-    left: 40%;
+    left: 40vw;
     margin-left: 20px;
 }
 
 .CreateButtonHolder {
     position: fixed;
     top: 70%;
-    left: 40%;
+    left: 40vw;
     margin-right: 20px;
 }
 

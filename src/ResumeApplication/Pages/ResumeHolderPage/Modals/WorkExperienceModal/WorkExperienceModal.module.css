@@ -17,7 +17,12 @@
     grid-template-columns: auto;
 }
 
-
+input:hover {
+    border-color: black;
+}
+textarea:hover {
+    border-color: black;
+}
 
 .JobTitle {
     display: inline-block;
