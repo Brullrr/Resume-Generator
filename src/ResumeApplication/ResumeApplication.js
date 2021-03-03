@@ -1,5 +1,5 @@
 import React, {Fragment, Component} from 'react';
-import { Route } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import Homepage from './Pages/Homepage/Homepage';
 import CreateResumePage from './Pages/CreateResumePage/CreateResumePage';
 import ResumeHolderPage from './Pages/ResumeHolderPage/ResumeHolderPage';
@@ -87,6 +87,7 @@ class ResumeApplication extends Component {
         render () {
             return (
                 <Fragment>
+                    <HashRouter>
                     <Route path='/' exact render={() => <Homepage /> } /> 
                     <Route path='/CreateNewResume' exact render={() => <CreateResumePage createNewResumeHandler={this.createNewResumeHandler} userResumes={this.state.userResumesArray}/>} />
                     <Route path='/ResumeHolder' exact render={() => {
@@ -100,6 +101,7 @@ class ResumeApplication extends Component {
                                 
                             />)
                     }} />
+                    </HashRouter>
                 </Fragment>
             )
 
