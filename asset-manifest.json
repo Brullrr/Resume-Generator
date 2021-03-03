@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Resume-Generator/static/css/main.13ffe15e.chunk.css",
-    "main.js": "/Resume-Generator/static/js/main.87ac4c16.chunk.js",
-    "main.js.map": "/Resume-Generator/static/js/main.87ac4c16.chunk.js.map",
+    "main.js": "/Resume-Generator/static/js/main.b4bb56e9.chunk.js",
+    "main.js.map": "/Resume-Generator/static/js/main.b4bb56e9.chunk.js.map",
     "runtime-main.js": "/Resume-Generator/static/js/runtime-main.f7bad6fa.js",
     "runtime-main.js.map": "/Resume-Generator/static/js/runtime-main.f7bad6fa.js.map",
     "static/js/2.c4bc04f0.chunk.js": "/Resume-Generator/static/js/2.c4bc04f0.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/5.2004d114.chunk.js": "/Resume-Generator/static/js/5.2004d114.chunk.js",
     "static/js/5.2004d114.chunk.js.map": "/Resume-Generator/static/js/5.2004d114.chunk.js.map",
     "index.html": "/Resume-Generator/index.html",
-    "precache-manifest.c2f2ca98c3df9c48e9a28c0bda1240d4.js": "/Resume-Generator/precache-manifest.c2f2ca98c3df9c48e9a28c0bda1240d4.js",
+    "precache-manifest.374c7d4f2685211e6da3a26e26e8a287.js": "/Resume-Generator/precache-manifest.374c7d4f2685211e6da3a26e26e8a287.js",
     "service-worker.js": "/Resume-Generator/service-worker.js",
     "static/css/main.13ffe15e.chunk.css.map": "/Resume-Generator/static/css/main.13ffe15e.chunk.css.map",
     "static/js/2.c4bc04f0.chunk.js.LICENSE.txt": "/Resume-Generator/static/js/2.c4bc04f0.chunk.js.LICENSE.txt",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.f7bad6fa.js",
     "static/js/3.991e5b4e.chunk.js",
     "static/css/main.13ffe15e.chunk.css",
-    "static/js/main.87ac4c16.chunk.js"
+    "static/js/main.b4bb56e9.chunk.js"
   ]
 }
